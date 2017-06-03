@@ -6,3 +6,7 @@
   - user: bob, password: secret
 - JWT取得
   - `curl --data "username=bob&password=secret" 127.0.0.1:8080/login`
+
+
+- help
+  - `docker run --rm tarent/loginsrv --help`
