@@ -5,8 +5,17 @@
   - http://localhost:8080/login
   - user: bob, password: secret
 - JWT取得
-  - `curl --data "username=bob&password=secret" 127.0.0.1:8080/login`
+  - default
+    - `curl -i --data "username=bob&password=secret" http://127.0.0.1:8080/login`
+  - json
+    - `curl -i -H 'Content-Type: application/json'  --data '{"username": "bob", "password": "secret"}' http://127.0.0.1:6789/login`
+  - web based
+    - `curl -i -H 'Accept: text/html' --data "username=bob&password=secret" http://127.0.0.1:6789/login`
 
 
 - help
   - `docker run --rm tarent/loginsrv --help`
+
+## githubサンプル
+- 起動
+  - `docker run -p 8080:8080 tarent/loginsrv -github client_id=xxx,client_secret=yyy`
