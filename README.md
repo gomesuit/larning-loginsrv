@@ -19,3 +19,15 @@
 ## githubサンプル
 - 起動
   - `docker run -p 8080:8080 tarent/loginsrv -github client_id=xxx,client_secret=yyy`
+
+
+
+## 連携サンプル
+- 準備
+```
+go get github.com/dgrijalva/jwt-go
+go get github.com/mattn/goreman
+go get github.com/mattn/gorem
+```
+- 起動
+  - goreman start
