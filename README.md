@@ -31,3 +31,8 @@ go get github.com/mattn/gorem
 ```
 - 起動
   - goreman start
+
+
+## JWTについて
+- 参考
+  - http://dev.classmethod.jp/server-side/json-signing-jws-jwt-usecase
